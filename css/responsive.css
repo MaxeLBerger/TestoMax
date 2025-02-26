@@ -1,0 +1,39 @@
+/* responsive.css */
+
+/* Mobile First Breakpoints */
+@media (min-width: 576px) {
+    /* Kleine Bildschirme (ab 576px) */
+  }
+  
+  @media (min-width: 768px) {
+    /* Mittelgroße Bildschirme (Tablet) */
+    .teaser {
+      margin-top: -100px;
+    }
+    .teaser-item {
+      flex: 1 1 calc(50% - 2rem);
+    }
+  
+    .fruit-section {
+      flex-direction: row;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    /* Große Bildschirme (Desktop) */
+    .fruit-section img {
+      width: 200px;
+    }
+  
+    .hero-content h1 {
+      font-size: 3rem;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    /* Sehr große Bildschirme */
+    .hero-content h1 {
+      font-size: 3.5rem;
+    }
+  }
+  

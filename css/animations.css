@@ -1,0 +1,23 @@
+/* animations.css */
+/* Falls du spezielle Keyframe-Animationen brauchst, kannst du sie hier definieren. 
+   Für AOS (Animate On Scroll) brauchst du v.a. im JavaScript die Init, 
+   hier kannst du zusätzliche Effekte definieren. */
+
+/* Beispiel: Ein sanftes FadeIn */
+@keyframes fadeInCustom {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Du kannst diese Klasse in deinen HTML-Elementen einsetzen, wenn du eine 
+     eigene Animation via CSS/JS triggern willst. */
+  .fade-in-custom {
+    animation: fadeInCustom 0.8s ease forwards;
+  }
+  
