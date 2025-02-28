@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -5,19 +6,27 @@
   <title>TestoBoosting | Startseite</title>
   <meta name="description" content="Maximiere dein Testosteronspiegel natürlich und effektiv!">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  
+  <!-- Preconnect & Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+  
   <!-- AOS Animation Library CSS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-
+  
   <!-- Eigene CSS-Dateien -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-
+  
+  <!-- Skip to Content Link -->
+  <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
+  
   <!-- NAVIGATION -->
-  <nav class="main-nav">
+  <nav class="main-nav" aria-label="Hauptnavigation">
     <div class="container">
       <a href="index.html" class="logo">TestoBoosting</a>
       <ul class="nav-links">
@@ -32,7 +41,7 @@
     </div>
   </nav>
   <!-- /NAVIGATION -->
-
+  
   <!-- HERO SECTION -->
   <header class="hero" id="hero">
     <div class="overlay"></div>
@@ -42,31 +51,35 @@
       <a href="lebensmittel.html" class="cta-btn">Jetzt starten</a>
     </div>
   </header>
-
-  <!-- TEASER-BEREICH -->
-  <section class="teaser container">
-    <div class="teaser-item" data-aos="fade-right">
-      <img src="images/icons/food.svg" alt="Icon Lebensmittel">
-      <h3>Die richtigen Lebensmittel</h3>
-      <p>Finde heraus, was deinen Testo-Spiegel wirklich boostet und wovon du besser die Finger lässt.</p>
-      <a href="lebensmittel.html" class="more-link">Mehr erfahren</a>
-    </div>
-
-    <div class="teaser-item" data-aos="fade-up">
-      <img src="images/icons/plastic.svg" alt="Icon Verpackungen">
-      <h3>Verpackungen vermeiden</h3>
-      <p>Viele Verpackungen enthalten Stoffe, die Hormone aus dem Gleichgewicht bringen. Erfahre mehr!</p>
-      <a href="verpackungen.html" class="more-link">Mehr erfahren</a>
-    </div>
-
-    <div class="teaser-item" data-aos="fade-left">
-      <img src="images/icons/training.svg" alt="Icon Training">
-      <h3>Optimales Training</h3>
-      <p>Nutze die effektivsten Übungen, um dein Testo-Niveau in neue Höhen zu katapultieren.</p>
-      <a href="training.html" class="more-link">Mehr erfahren</a>
-    </div>
-  </section>
-
+  
+  <!-- MAIN CONTENT -->
+  <main id="main-content">
+    <!-- TEASER-BEREICH -->
+    <section class="teaser container">
+      <div class="teaser-item" data-aos="fade-right">
+        <img src="images/icons/food.svg" alt="Icon Lebensmittel" loading="lazy">
+        <h3>Die richtigen Lebensmittel</h3>
+        <p>Finde heraus, was deinen Testo-Spiegel wirklich boostet und wovon du besser die Finger lässt.</p>
+        <a href="lebensmittel.html" class="more-link">Mehr erfahren</a>
+      </div>
+  
+      <div class="teaser-item" data-aos="fade-up">
+        <img src="images/icons/plastic.svg" alt="Icon Verpackungen" loading="lazy">
+        <h3>Verpackungen vermeiden</h3>
+        <p>Viele Verpackungen enthalten Stoffe, die Hormone aus dem Gleichgewicht bringen. Erfahre mehr!</p>
+        <a href="verpackungen.html" class="more-link">Mehr erfahren</a>
+      </div>
+  
+      <div class="teaser-item" data-aos="fade-left">
+        <img src="images/icons/training.svg" alt="Icon Training" loading="lazy">
+        <h3>Optimales Training</h3>
+        <p>Nutze die effektivsten Übungen, um dein Testo-Niveau in neue Höhen zu katapultieren.</p>
+        <a href="training.html" class="more-link">Mehr erfahren</a>
+      </div>
+    </section>
+  </main>
+  <!-- /MAIN CONTENT -->
+  
   <!-- FOOTER -->
   <footer class="main-footer">
     <div class="container footer-content">
@@ -74,13 +87,11 @@
       <p><a href="kontakt.html">Kontakt</a> | <a href="faq.html">FAQ</a></p>
     </div>
   </footer>
-
+  <!-- /FOOTER -->
+  
   <!-- Scripts -->
-  <!-- AOS JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <!-- Eigene Skripte -->
   <script src="js/script.js"></script>
   <script src="js/animations.js"></script>
-
 </body>
 </html>

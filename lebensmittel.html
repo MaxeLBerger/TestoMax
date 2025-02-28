@@ -1,3 +1,4 @@
+<!-- lebensmittel.html -->
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -5,19 +6,27 @@
   <title>TestoBoosting | Lebensmittel</title>
   <meta name="description" content="Gesunde und schädliche Lebensmittel für deinen Testosteron-Boost.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  
+  <!-- Preconnect & Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+  
   <!-- AOS Animation Library CSS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-
+  
   <!-- Eigene CSS-Dateien -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-
+  
+  <!-- Skip to Content Link -->
+  <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
+  
   <!-- NAVIGATION -->
-  <nav class="main-nav">
+  <nav class="main-nav" aria-label="Hauptnavigation">
     <div class="container">
       <a href="index.html" class="logo">TestoBoosting</a>
       <ul class="nav-links">
@@ -32,7 +41,7 @@
     </div>
   </nav>
   <!-- /NAVIGATION -->
-
+  
   <!-- HEADER-BEREICH -->
   <header class="subpage-hero" id="lebensmittel-hero">
     <div class="overlay"></div>
@@ -41,32 +50,35 @@
       <p>Finde heraus, welche Nahrungsmittel deinen Testo-Spiegel anheben oder senken.</p>
     </div>
   </header>
-
-  <!-- INHALT -->
-  <section class="container content-section">
-    <h2 data-aos="fade-right">Was ist gut für dein Testo?</h2>
-    <ul class="checklist" data-aos="fade-up">
-      <li>Fleisch (Grasgefüttert, Bio-Qualität)</li>
-      <li>Eier (besonders das Eigelb!)</li>
-      <li>Gesunde Fette (Olivenöl, Kokosöl, Avocado)</li>
-      <li>Nüsse (Walnüsse, Mandeln, Paranüsse)</li>
-      <li>Gemüse (Brokkoli, Spinat, Paprika)</li>
-    </ul>
-
-    <h2 data-aos="fade-right">Das solltest du vermeiden</h2>
-    <ul class="warning-list" data-aos="fade-up">
-      <li>Soja & Sojaprodukte</li>
-      <li>Stark zuckerhaltige Lebensmittel</li>
-      <li>Fast Food & stark verarbeitete Lebensmittel</li>
-      <li>Transfette (Margarine, frittierte Speisen)</li>
-    </ul>
-
-    <div class="info-box" data-aos="zoom-in">
-      <h3>Profi-Tipp</h3>
-      <p>Setze auf saisonale & regionale Bio-Produkte, um Pestizide zu reduzieren und frische, nährstoffreiche Ware zu bekommen.</p>
-    </div>
-  </section>
-
+  
+  <!-- MAIN CONTENT -->
+  <main id="main-content">
+    <section class="container content-section">
+      <h2 data-aos="fade-right">Was ist gut für dein Testo?</h2>
+      <ul class="checklist" data-aos="fade-up">
+        <li>Fleisch (Grasgefüttert, Bio-Qualität)</li>
+        <li>Eier (besonders das Eigelb!)</li>
+        <li>Gesunde Fette (Olivenöl, Kokosöl, Avocado)</li>
+        <li>Nüsse (Walnüsse, Mandeln, Paranüsse)</li>
+        <li>Gemüse (Brokkoli, Spinat, Paprika)</li>
+      </ul>
+  
+      <h2 data-aos="fade-right">Das solltest du vermeiden</h2>
+      <ul class="warning-list" data-aos="fade-up">
+        <li>Soja & Sojaprodukte</li>
+        <li>Stark zuckerhaltige Lebensmittel</li>
+        <li>Fast Food & stark verarbeitete Lebensmittel</li>
+        <li>Transfette (Margarine, frittierte Speisen)</li>
+      </ul>
+  
+      <div class="info-box" data-aos="zoom-in">
+        <h3>Profi-Tipp</h3>
+        <p>Setze auf saisonale & regionale Bio-Produkte, um Pestizide zu reduzieren und frische, nährstoffreiche Ware zu bekommen.</p>
+      </div>
+    </section>
+  </main>
+  <!-- /MAIN CONTENT -->
+  
   <!-- FOOTER -->
   <footer class="main-footer">
     <div class="container footer-content">
@@ -74,7 +86,8 @@
       <p><a href="kontakt.html">Kontakt</a> | <a href="faq.html">FAQ</a></p>
     </div>
   </footer>
-
+  <!-- /FOOTER -->
+  
   <!-- Scripts -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/script.js"></script>

@@ -1,3 +1,4 @@
+<!-- obst.html -->
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -5,19 +6,27 @@
   <title>TestoBoosting | Obst</title>
   <meta name="description" content="Die besten Früchte für einen gesunden Testo-Push.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  
+  <!-- Preconnect & Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+  
   <!-- AOS Animation Library CSS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-
+  
   <!-- Eigene CSS-Dateien -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-
+  
+  <!-- Skip to Content Link -->
+  <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
+  
   <!-- NAVIGATION -->
-  <nav class="main-nav">
+  <nav class="main-nav" aria-label="Hauptnavigation">
     <div class="container">
       <a href="index.html" class="logo">TestoBoosting</a>
       <ul class="nav-links">
@@ -32,7 +41,7 @@
     </div>
   </nav>
   <!-- /NAVIGATION -->
-
+  
   <!-- HEADER-BEREICH -->
   <header class="subpage-hero" id="obst-hero">
     <div class="overlay"></div>
@@ -41,43 +50,46 @@
       <p>Granatapfel, Avocado & mehr – das Power-Obst für echte Männer!</p>
     </div>
   </header>
-
-  <!-- INHALT -->
-  <section class="container content-section">
-    <div class="fruit-section" data-aos="fade-right">
-      <img src="images/content/granatapfel.jpg" alt="Granatapfel">
-      <div>
-        <h2>Granatapfel</h2>
-        <p>Reich an Antioxidantien und kann Testosteronspiegel positiv beeinflussen.</p>
+  
+  <!-- MAIN CONTENT -->
+  <main id="main-content">
+    <section class="container content-section">
+      <div class="fruit-section" data-aos="fade-right">
+        <img src="images/content/granatapfel.jpg" alt="Granatapfel" loading="lazy">
+        <div>
+          <h2>Granatapfel</h2>
+          <p>Reich an Antioxidantien und kann Testosteronspiegel positiv beeinflussen.</p>
+        </div>
       </div>
-    </div>
-
-    <div class="fruit-section" data-aos="fade-left">
-      <img src="images/content/avocado.jpg" alt="Avocado">
-      <div>
-        <h2>Avocado</h2>
-        <p>Gesunde Fette, Vitamin E, fördert Hormonproduktion und sorgt für gute Cholesterinwerte.</p>
+  
+      <div class="fruit-section" data-aos="fade-left">
+        <img src="images/content/avocado.jpg" alt="Avocado" loading="lazy">
+        <div>
+          <h2>Avocado</h2>
+          <p>Gesunde Fette, Vitamin E, fördert Hormonproduktion und sorgt für gute Cholesterinwerte.</p>
+        </div>
       </div>
-    </div>
-
-    <div class="fruit-section" data-aos="fade-right">
-      <img src="images/content/banane.jpg" alt="Banane">
-      <div>
-        <h2>Bananen</h2>
-        <p>Reich an Kalium und B-Vitaminen, kann die Energie erhöhen und die Produktion von Testosteron unterstützen.</p>
+  
+      <div class="fruit-section" data-aos="fade-right">
+        <img src="images/content/banane.jpg" alt="Banane" loading="lazy">
+        <div>
+          <h2>Bananen</h2>
+          <p>Reich an Kalium und B-Vitaminen, kann die Energie erhöhen und die Produktion von Testosteron unterstützen.</p>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <section class="container content-section" data-aos="zoom-in">
-    <h2>Was solltest du meiden?</h2>
-    <ul class="warning-list">
-      <li>Fruchtsäfte mit viel zusätzlichem Zucker</li>
-      <li>Dosenobst mit Sirup</li>
-      <li>Getrocknetes Obst mit hohem Zuckergehalt (in Maßen genießen)</li>
-    </ul>
-  </section>
-
+    </section>
+  
+    <section class="container content-section" data-aos="zoom-in">
+      <h2>Was solltest du meiden?</h2>
+      <ul class="warning-list">
+        <li>Fruchtsäfte mit viel zusätzlichem Zucker</li>
+        <li>Dosenobst mit Sirup</li>
+        <li>Getrocknetes Obst mit hohem Zuckergehalt (in Maßen genießen)</li>
+      </ul>
+    </section>
+  </main>
+  <!-- /MAIN CONTENT -->
+  
   <!-- FOOTER -->
   <footer class="main-footer">
     <div class="container footer-content">
@@ -85,7 +97,8 @@
       <p><a href="kontakt.html">Kontakt</a> | <a href="faq.html">FAQ</a></p>
     </div>
   </footer>
-
+  <!-- /FOOTER -->
+  
   <!-- Scripts -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/script.js"></script>

@@ -1,3 +1,4 @@
+<!-- kontakt.html -->
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -5,19 +6,27 @@
   <title>TestoBoosting | Kontakt</title>
   <meta name="description" content="Kontaktiere uns oder folge uns auf Social Media.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  
+  <!-- Preconnect & Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+  
   <!-- AOS Animation Library CSS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-
+  
   <!-- Eigene CSS-Dateien -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-
+  
+  <!-- Skip to Content Link -->
+  <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
+  
   <!-- NAVIGATION -->
-  <nav class="main-nav">
+  <nav class="main-nav" aria-label="Hauptnavigation">
     <div class="container">
       <a href="index.html" class="logo">TestoBoosting</a>
       <ul class="nav-links">
@@ -32,7 +41,7 @@
     </div>
   </nav>
   <!-- /NAVIGATION -->
-
+  
   <!-- HEADER-BEREICH -->
   <header class="subpage-hero" id="kontakt-hero">
     <div class="overlay"></div>
@@ -41,42 +50,45 @@
       <p>Wir freuen uns auf deine Nachricht!</p>
     </div>
   </header>
-
-  <!-- INHALT -->
-  <section class="container content-section">
-    <div class="contact-form" data-aos="fade-right">
-      <h2>Schreib uns</h2>
-      <form>
-        <label for="name">Name</label>
-        <input type="text" id="name" required>
-
-        <label for="email">E-Mail</label>
-        <input type="email" id="email" required>
-
-        <label for="message">Nachricht</label>
-        <textarea id="message" rows="5" required></textarea>
-
-        <button type="submit" class="cta-btn">Absenden</button>
-      </form>
-    </div>
-
-    <div class="social-links" data-aos="fade-left">
-      <h2>Folge uns</h2>
-      <ul>
-        <li><a href="#" target="_blank">Instagram</a></li>
-        <li><a href="#" target="_blank">Facebook</a></li>
-        <li><a href="#" target="_blank">YouTube</a></li>
-      </ul>
-
-      <h2>Newsletter</h2>
-      <p>Melde dich an und erhalte exklusive Tipps:</p>
-      <form class="newsletter-form">
-        <input type="email" placeholder="Deine E-Mail" required>
-        <button type="submit" class="cta-btn">Anmelden</button>
-      </form>
-    </div>
-  </section>
-
+  
+  <!-- MAIN CONTENT -->
+  <main id="main-content">
+    <section class="container content-section">
+      <div class="contact-form" data-aos="fade-right">
+        <h2>Schreib uns</h2>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" required>
+  
+          <label for="email">E-Mail</label>
+          <input type="email" id="email" required>
+  
+          <label for="message">Nachricht</label>
+          <textarea id="message" rows="5" required></textarea>
+  
+          <button type="submit" class="cta-btn">Absenden</button>
+        </form>
+      </div>
+  
+      <div class="social-links" data-aos="fade-left">
+        <h2>Folge uns</h2>
+        <ul>
+          <li><a href="#" target="_blank">Instagram</a></li>
+          <li><a href="#" target="_blank">Facebook</a></li>
+          <li><a href="#" target="_blank">YouTube</a></li>
+        </ul>
+  
+        <h2>Newsletter</h2>
+        <p>Melde dich an und erhalte exklusive Tipps:</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Deine E-Mail" required>
+          <button type="submit" class="cta-btn">Anmelden</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <!-- /MAIN CONTENT -->
+  
   <!-- FOOTER -->
   <footer class="main-footer">
     <div class="container footer-content">
@@ -84,7 +96,8 @@
       <p><a href="kontakt.html">Kontakt</a> | <a href="faq.html">FAQ</a></p>
     </div>
   </footer>
-
+  <!-- /FOOTER -->
+  
   <!-- Scripts -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/script.js"></script>
