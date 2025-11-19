@@ -4,6 +4,15 @@
 /* Mobile First Breakpoints */
 @media (min-width: 576px) {
   /* Kleine Bildschirme (ab 576px) */
+  .newsletter-form {
+    flex-direction: row;
+  }
+  .newsletter-form input {
+    flex: 1;
+  }
+  .newsletter-form button {
+    flex-shrink: 0;
+  }
 }
 
 @media (min-width: 768px) {
@@ -17,6 +26,9 @@
   .fruit-section {
     flex-direction: row;
   }
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 992px) {
@@ -27,11 +39,36 @@
   .hero-content h1 {
     font-size: 3rem;
   }
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (min-width: 1200px) {
   /* Sehr große Bildschirme */
   .hero-content h1 {
     font-size: 3.5rem;
+  }
+}
+
+/* Mobile Navigation Enhancement */
+@media (max-width: 767px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: var(--secondary-color);
+    padding: 1rem;
+  }
+  
+  .newsletter-form {
+    flex-direction: column;
+  }
+  
+  .products-grid {
+    grid-template-columns: 1fr;
   }
 }
