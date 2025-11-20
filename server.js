@@ -14,22 +14,15 @@ const limiter = rateLimit({
 
 app.use(limiter);
 
-// Define public directory for static files (restricts access to only public files)
-const publicDir = path.join(__dirname);
+// Define public directory for static files
+const publicDir = path.join(__dirname, 'public');
 
-// Serve static files only from specific directories
-app.use('/css', express.static(path.join(publicDir, 'css')));
-app.use('/js', express.static(path.join(publicDir, 'js')));
-app.use('/images', express.static(path.join(publicDir, 'images')));
+// Serve static files from the public directory
+app.use(express.static(publicDir));
 
-// Serve HTML files
-app.get('/', limiter, (req, res) => {
+// Serve index.html explicitly for root (optional as express.static handles it, but good for clarity)
+app.get('/', (req, res) => {
   res.sendFile(path.join(publicDir, 'index.html'));
-});
-
-app.get('/*.html', limiter, (req, res) => {
-  const filename = path.basename(req.path);
-  res.sendFile(path.join(publicDir, filename));
 });
 
 // Start server
