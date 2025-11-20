@@ -47,17 +47,13 @@ http://localhost:3000
 
 ```
 TestoMax/
-├── css/
-│   ├── style.css          # Main styles
-│   ├── responsive.css     # Responsive breakpoints
-│   └── animations.css     # CSS animations
-├── js/
-│   ├── script.js          # Main JavaScript with revenue features
-│   └── animations.js      # Animation initialization
-├── images/
-│   └── icons/             # SVG icons
-├── *.html                 # HTML pages
-├── server.js              # Express server
+├── public/                # Static assets
+│   ├── css/               # Stylesheets
+│   ├── js/                # JavaScript files
+│   ├── images/            # Images and icons
+│   └── *.html             # HTML pages
+├── server/                # Server-side logic (optional)
+├── server.js              # Express server entry point
 ├── package.json           # Node.js dependencies
 └── README.md              # This file
 ```
