@@ -228,21 +228,49 @@ a:hover {
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
+
+/* Zwei-Spalten-Layout für Listen-Bereiche (lebensmittel.html etc.) */
+.lists-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.lists-container .list-column {
+  min-width: 0;
+}
+@media (max-width: 768px) {
+  .lists-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 .checklist,
 .warning-list {
   list-style: none;
   margin: 1rem 0;
   padding: 0;
 }
+.checklist li,
+.warning-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
 .checklist li::before {
-  content: "✔ ";
+  content: "✔";
   color: var(--primary-color);
   margin-right: 0.5rem;
+  flex-shrink: 0;
+  font-weight: bold;
 }
 .warning-list li::before {
-  content: "✘ ";
+  content: "✘";
   color: var(--primary-color);
   margin-right: 0.5rem;
+  flex-shrink: 0;
+  font-weight: bold;
 }
 
 /* INFO-BOX */
