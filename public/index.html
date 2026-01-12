@@ -12,9 +12,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
   
-  <!-- AOS Animation Library CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-  
   <!-- Eigene CSS-Dateien -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animations.css">
@@ -42,10 +39,10 @@
   <!-- HERO SECTION -->
   <header class="hero" id="hero">
     <div class="overlay"></div>
-    <div class="hero-content" data-aos="fade-up">
-      <h1>Maximiere Dein Testosteron</h1>
-      <p>Erfahre, was du wirklich wissen musst, um dein Leben zu verändern.</p>
-      <a href="lebensmittel.html" class="cta-btn">Jetzt starten</a>
+    <div class="hero-content">
+      <h1 class="hero-title">Maximiere Dein Testosteron</h1>
+      <p class="hero-subtitle">Erfahre, was du wirklich wissen musst, um dein Leben zu verändern.</p>
+      <a href="lebensmittel.html" class="cta-btn hero-cta">Jetzt starten</a>
     </div>
   </header>
   
@@ -53,9 +50,9 @@
   <main id="main-content">
     <!-- TEASER-BEREICH -->
     <section class="teaser container">
-      <div class="teaser-item" data-aos="fade-right">
+      <div class="teaser-item">
         <div class="teaser-image">
-          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80" alt="Gesunde Lebensmittel" loading="lazy">
+          <img src="images/teasers/food.svg" alt="Gesunde Lebensmittel" loading="lazy">
         </div>
         <div class="teaser-content">
           <h3>Die richtigen Lebensmittel</h3>
@@ -64,9 +61,9 @@
         </div>
       </div>
   
-      <div class="teaser-item" data-aos="fade-up">
+      <div class="teaser-item">
         <div class="teaser-image">
-          <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=800&q=80" alt="Plastik vermeiden" loading="lazy">
+          <img src="images/teasers/packaging.svg" alt="Plastik vermeiden" loading="lazy">
         </div>
         <div class="teaser-content">
           <h3>Verpackungen vermeiden</h3>
@@ -75,9 +72,9 @@
         </div>
       </div>
   
-      <div class="teaser-item" data-aos="fade-left">
+      <div class="teaser-item">
         <div class="teaser-image">
-          <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=800&q=80" alt="Die richtige Unterwäsche" loading="lazy">
+          <img src="images/teasers/underwear.svg" alt="Die richtige Unterwäsche" loading="lazy">
         </div>
         <div class="teaser-content">
           <h3>Die richtige Unterwäsche</h3>
@@ -86,9 +83,9 @@
         </div>
       </div>
 
-      <div class="teaser-item" data-aos="fade-up">
+      <div class="teaser-item">
         <div class="teaser-image">
-          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80" alt="Optimales Training" loading="lazy">
+          <img src="images/teasers/training.svg" alt="Optimales Training" loading="lazy">
         </div>
         <div class="teaser-content">
           <h3>Optimales Training</h3>
@@ -99,7 +96,7 @@
     </section>
 
     <!-- NEWSLETTER SIGNUP (Revenue Generation) -->
-    <section class="newsletter-section container" data-aos="fade-up">
+    <section class="newsletter-section container">
       <div class="newsletter-box">
         <h2>Erhalte exklusive Testo-Tipps</h2>
         <p>Melde dich für unseren Newsletter an und erhalte wöchentlich wissenschaftlich fundierte Tipps zur Testosteron-Optimierung.</p>
@@ -111,13 +108,13 @@
     </section>
 
     <!-- RECOMMENDED PRODUCTS (Affiliate Revenue) -->
-    <section class="products-section container" data-aos="fade-up">
+    <section class="products-section container">
       <h2>Empfohlene Produkte</h2>
       <p class="section-subtitle">Hochwertige Supplements und Tools für optimale Ergebnisse</p>
       <div class="products-grid">
         <div class="product-card">
           <div class="product-image">
-            <img src="https://images.unsplash.com/photo-1593095948071-474c5cc2989d?auto=format&fit=crop&w=600&q=80" alt="Zink Supplement" loading="lazy">
+            <img src="images/products/zinc.svg" alt="Zink Supplement" loading="lazy">
           </div>
           <div class="product-info">
             <h3>Premium Zink Supplement</h3>
@@ -128,7 +125,7 @@
         </div>
         <div class="product-card">
           <div class="product-image">
-            <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=600&q=80" alt="Vitamin D3 + K2" loading="lazy">
+            <img src="images/products/vitamin-d.svg" alt="Vitamin D3 + K2" loading="lazy">
           </div>
           <div class="product-info">
             <h3>Vitamin D3 + K2</h3>
@@ -139,7 +136,7 @@
         </div>
         <div class="product-card">
           <div class="product-image">
-            <img src="https://images.unsplash.com/photo-1579722821273-0f6c7d44362f?auto=format&fit=crop&w=600&q=80" alt="Magnesium Complex" loading="lazy">
+            <img src="images/products/magnesium.svg" alt="Magnesium Complex" loading="lazy">
           </div>
           <div class="product-info">
             <h3>Magnesium Complex</h3>
@@ -163,7 +160,10 @@
   <!-- /FOOTER -->
   
   <!-- Scripts -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- GSAP Core -->
+  <script src="js/lib/gsap.min.js"></script>
+  <!-- GSAP ScrollTrigger Plugin -->
+  <script src="js/lib/ScrollTrigger.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/animations.js"></script>
 </body>

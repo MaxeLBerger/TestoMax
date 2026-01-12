@@ -12,8 +12,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
   
-  <!-- AOS Animation Library CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+
   
   <!-- Eigene CSS-Dateien -->
   <link rel="stylesheet" href="css/style.css">
@@ -42,7 +42,7 @@
   <!-- HEADER-BEREICH -->
   <header class="subpage-hero" id="kontakt-hero">
     <div class="overlay"></div>
-    <div class="hero-content" data-aos="fade-up">
+    <div class="hero-content">
       <h1>Kontakt & Social Media</h1>
       <p>Wir freuen uns auf deine Nachricht!</p>
     </div>
@@ -51,7 +51,7 @@
   <!-- MAIN CONTENT -->
   <main id="main-content">
     <section class="container content-section">
-      <div class="contact-form" data-aos="fade-right">
+      <div class="contact-form">
         <h2>Schreib uns</h2>
         <form>
           <label for="name">Name</label>
@@ -67,7 +67,7 @@
         </form>
       </div>
   
-      <div class="social-links" data-aos="fade-left">
+      <div class="social-links">
         <h2>Folge uns</h2>
         <ul>
           <li><a href="#" target="_blank">Instagram</a></li>
@@ -96,8 +96,11 @@
   <!-- /FOOTER -->
   
   <!-- Scripts -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- GSAP Core -->
+  <script src="js/lib/gsap.min.js"></script>
+  <!-- GSAP ScrollTrigger Plugin -->
+  <script src="js/lib/ScrollTrigger.min.js"></script>
   <script src="js/script.js"></script>
-  <script src="js/animations.js"></script>
+  <script src="js/gsap-page-animations.js"></script>
 </body>
 </html>
