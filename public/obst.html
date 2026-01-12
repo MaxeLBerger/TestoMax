@@ -12,8 +12,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
   
-  <!-- AOS Animation Library CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+
   
   <!-- Eigene CSS-Dateien -->
   <link rel="stylesheet" href="css/style.css">
@@ -42,7 +42,7 @@
   <!-- HEADER-BEREICH -->
   <header class="subpage-hero" id="obst-hero">
     <div class="overlay"></div>
-    <div class="hero-content" data-aos="fade-up">
+    <div class="hero-content">
       <h1>Bestes Obst für dein Testo</h1>
       <p>Granatapfel, Avocado & mehr – das Power-Obst für echte Männer!</p>
     </div>
@@ -51,7 +51,7 @@
   <!-- MAIN CONTENT -->
   <main id="main-content">
     <section class="container content-section">
-      <div class="fruit-section" data-aos="fade-right">
+      <div class="fruit-section">
         <img src="images/content/granatapfel.jpg" alt="Granatapfel" loading="lazy">
         <div>
           <h2>Granatapfel</h2>
@@ -59,7 +59,7 @@
         </div>
       </div>
   
-      <div class="fruit-section" data-aos="fade-left">
+      <div class="fruit-section">
         <img src="images/content/avocado.jpg" alt="Avocado" loading="lazy">
         <div>
           <h2>Avocado</h2>
@@ -67,7 +67,7 @@
         </div>
       </div>
   
-      <div class="fruit-section" data-aos="fade-right">
+      <div class="fruit-section">
         <img src="images/content/banane.jpg" alt="Banane" loading="lazy">
         <div>
           <h2>Bananen</h2>
@@ -76,7 +76,7 @@
       </div>
     </section>
   
-    <section class="container content-section" data-aos="zoom-in">
+    <section class="container content-section">
       <h2>Was solltest du meiden?</h2>
       <ul class="warning-list">
         <li>Fruchtsäfte mit viel zusätzlichem Zucker</li>
@@ -97,8 +97,11 @@
   <!-- /FOOTER -->
   
   <!-- Scripts -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- GSAP Core -->
+  <script src="js/lib/gsap.min.js"></script>
+  <!-- GSAP ScrollTrigger Plugin -->
+  <script src="js/lib/ScrollTrigger.min.js"></script>
   <script src="js/script.js"></script>
-  <script src="js/animations.js"></script>
+  <script src="js/gsap-page-animations.js"></script>
 </body>
 </html>

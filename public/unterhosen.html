@@ -12,8 +12,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
   
-  <!-- AOS Animation Library CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+
   
   <!-- Eigene CSS-Dateien -->
   <link rel="stylesheet" href="css/style.css">
@@ -42,7 +42,7 @@
   <!-- HEADER-BEREICH -->
   <header class="subpage-hero" id="unterhosen-hero">
     <div class="overlay"></div>
-    <div class="hero-content" data-aos="fade-up">
+    <div class="hero-content">
       <h1>Die richtige Unterwäsche</h1>
       <p>Weil deine Hoden frische Luft brauchen.</p>
     </div>
@@ -52,11 +52,11 @@
   <main id="main-content">
     <section class="container content-section">
       <div class="lists-container">
-        <div class="list-column" data-aos="fade-right">
+        <div class="list-column">
           <h2>Warum ist die Wahl der Unterwäsche so wichtig?</h2>
           <p>Enge Slips und synthetische Stoffe können zu Wärmestau führen. Deine Hoden benötigen jedoch eine etwas kühlere Temperatur als der Rest des Körpers für optimale Testo-Produktion.</p>
         </div>
-        <div class="list-column" data-aos="fade-left">
+        <div class="list-column">
           <h2>Materialien & Empfehlungen</h2>
           <ul class="checklist">
             <li>Boxershorts (Baumwolle, Bambus, Merino-Wolle)</li>
@@ -66,7 +66,7 @@
         </div>
       </div>
 
-      <div class="info-box" data-aos="zoom-in">
+      <div class="info-box">
         <h3>Profi-Tipp</h3>
         <p>Gönne deinen Kronjuwelen nachts eine Pause – schlafe nackt, falls möglich, um die Temperatur schön niedrig zu halten.</p>
       </div>
@@ -84,8 +84,11 @@
   <!-- /FOOTER -->
   
   <!-- Scripts -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- GSAP Core -->
+  <script src="js/lib/gsap.min.js"></script>
+  <!-- GSAP ScrollTrigger Plugin -->
+  <script src="js/lib/ScrollTrigger.min.js"></script>
   <script src="js/script.js"></script>
-  <script src="js/animations.js"></script>
+  <script src="js/gsap-page-animations.js"></script>
 </body>
 </html>

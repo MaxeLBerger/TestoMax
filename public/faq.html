@@ -12,8 +12,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
   
-  <!-- AOS Animation Library CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+
   
   <!-- Eigene CSS-Dateien -->
   <link rel="stylesheet" href="css/style.css">
@@ -42,7 +42,7 @@
   <!-- HEADER-BEREICH -->
   <header class="subpage-hero" id="faq-hero">
     <div class="overlay"></div>
-    <div class="hero-content" data-aos="fade-up">
+    <div class="hero-content">
       <h1>Häufige Fragen & Mythen</h1>
       <p>Die Wahrheit über Soja, Plastik und Co.</p>
     </div>
@@ -51,17 +51,17 @@
   <!-- MAIN CONTENT -->
   <main id="main-content">
     <section class="container content-section">
-      <div class="faq-item" data-aos="fade-up">
+      <div class="faq-item">
         <h2>1. Ist Soja wirklich so schlecht?</h2>
         <p>Soja enthält Phytoöstrogene, die östrogenartig wirken können. In Maßen ist es oft unproblematisch, jedoch sollte man bei hohem Konsum aufpassen.</p>
       </div>
   
-      <div class="faq-item" data-aos="fade-up">
+      <div class="faq-item">
         <h2>2. Kann man Testosteron ohne Steroide wirklich stark boosten?</h2>
         <p>Ja! Durch richtiges Training, Ernährung, Schlaf und Stressmanagement kannst du signifikante Verbesserungen erreichen.</p>
       </div>
   
-      <div class="faq-item" data-aos="fade-up">
+      <div class="faq-item">
         <h2>3. Warum sollte ich Plastik meiden?</h2>
         <p>Bestimmte Weichmacher & BPA können den Hormonhaushalt stören. Lieber auf Glas oder Edelstahl ausweichen.</p>
       </div>
@@ -79,8 +79,11 @@
   <!-- /FOOTER -->
   
   <!-- Scripts -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- GSAP Core -->
+  <script src="js/lib/gsap.min.js"></script>
+  <!-- GSAP ScrollTrigger Plugin -->
+  <script src="js/lib/ScrollTrigger.min.js"></script>
   <script src="js/script.js"></script>
-  <script src="js/animations.js"></script>
+  <script src="js/gsap-page-animations.js"></script>
 </body>
 </html>
