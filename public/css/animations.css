@@ -1,14 +1,73 @@
 /* /css */
-/* File: animations.css */
-/* Falls du spezielle Keyframe-Animationen brauchst, kannst du sie hier definieren. 
-   Für AOS (Animate On Scroll) braucht man v.a. im JavaScript die Init, 
-   hier kannst du zusätzliche Effekte definieren. */
+/* File: animations.css - GSAP Enhanced Animations */
 
-/* Beispiel: Ein sanftes FadeIn */
-@keyframes fadeInCustom {
+/* Base animation styles to ensure elements start in correct state */
+.hero-title,
+.hero-subtitle,
+.hero-cta {
+  will-change: transform, opacity;
+}
+
+.teaser-item,
+.product-card,
+.newsletter-box {
+  will-change: transform, opacity;
+}
+
+/* Smooth transitions for interactive elements */
+.teaser-item,
+.product-card {
+  transition: box-shadow 0.3s ease;
+}
+
+/* Enhanced hover states */
+.teaser-item:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.product-card:hover {
+  box-shadow: 0 8px 35px rgba(232, 80, 27, 0.2);
+}
+
+/* Smooth button transitions */
+.cta-btn,
+.product-btn,
+.more-link {
+  transition: all 0.3s ease;
+}
+
+/* Parallax-ready hero */
+.hero {
+  background-attachment: fixed;
+  background-position: 50% 0%;
+}
+
+/* Stagger animation support */
+.teaser-item:nth-child(1) { z-index: 4; }
+.teaser-item:nth-child(2) { z-index: 3; }
+.teaser-item:nth-child(3) { z-index: 2; }
+.teaser-item:nth-child(4) { z-index: 1; }
+
+/* Ensure smooth GPU acceleration */
+.hero-content,
+.teaser-item,
+.product-card,
+.newsletter-box {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Loading animation for images */
+.teaser-image img,
+.product-image img {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Custom keyframe for fallback animations */
+@keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(30px);
   }
   100% {
     opacity: 1;
@@ -16,8 +75,24 @@
   }
 }
 
-/* Diese Klasse kannst du in HTML-Elementen einsetzen, wenn du eine 
-   eigene Animation via CSS/JS triggern willst. */
-.fade-in-custom {
-  animation: fadeInCustom 0.8s ease forwards;
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Fallback for browsers without GSAP */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

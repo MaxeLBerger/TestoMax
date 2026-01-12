@@ -39,13 +39,4 @@ document.addEventListener('DOMContentLoaded', () => {
       alert(`Produkt "${productName}" wird in Kürze verfügbar sein!`);
     });
   });
-  
-  // Initialize AOS if available (fallback if CDN is blocked)
-  if (typeof AOS !== 'undefined') {
-    AOS.init({
-      duration: 800,
-      easing: 'ease-in-out',
-      once: true
-    });
-  }
 });
