@@ -1,13 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
   <defs>
-    <linearGradient id="grad7" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#004d40;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#00695c;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#003830;stop-opacity:1" />
+    <linearGradient id="fg9" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="50%" stop-color="#2a2a4e"/>
+      <stop offset="100%" stop-color="#111128"/>
     </linearGradient>
   </defs>
-  <rect width="1920" height="1080" fill="url(#grad7)"/>
-  <text x="960" y="540" font-size="300" fill="rgba(255,255,255,0.1)" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold">?</text>
-  <circle cx="500" cy="300" r="80" fill="rgba(77,182,172,0.2)"/>
-  <circle cx="1420" cy="780" r="100" fill="rgba(77,182,172,0.18)"/>
+  <rect width="1920" height="1080" fill="url(#fg9)"/>
+  <text x="300" y="350" font-size="220" fill="rgba(232,80,27,0.12)" font-family="Georgia" font-weight="bold">?</text>
+  <text x="800" y="700" font-size="280" fill="rgba(232,80,27,0.08)" font-family="Georgia" font-weight="bold">?</text>
+  <text x="1400" y="450" font-size="180" fill="rgba(232,80,27,0.1)" font-family="Georgia" font-weight="bold">?</text>
+  <path d="M700,800 Q700,750 750,750 L950,750 Q1000,750 1000,800 L1000,880 Q1000,930 950,930 L830,930 Q830,930 850,980 L810,930 L750,930 Q700,930 700,880Z" fill="rgba(255,255,255,0.06)" stroke="rgba(232,80,27,0.15)" stroke-width="2"/>
+  <circle cx="810" cy="840" r="8" fill="rgba(232,80,27,0.2)"/>
+  <circle cx="850" cy="840" r="8" fill="rgba(232,80,27,0.2)"/>
+  <circle cx="890" cy="840" r="8" fill="rgba(232,80,27,0.2)"/>
+  <circle cx="960" cy="250" r="60" fill="none" stroke="rgba(232,80,27,0.15)" stroke-width="2"/>
+  <path d="M940,230 Q940,200 960,200 Q990,200 990,230 Q990,250 960,260" stroke="rgba(232,80,27,0.2)" stroke-width="3" fill="none"/>
+  <circle cx="960" cy="280" r="4" fill="rgba(232,80,27,0.2)"/>
+  <ellipse cx="1600" cy="600" rx="90" ry="5" fill="rgba(255,255,255,0.04)"/>
+  <path d="M1540,600 L1540,350 Q1540,340 1550,340 L1650,340 Q1660,340 1660,350 L1660,600" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+  <line x1="1560" y1="380" x2="1640" y2="380" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <line x1="1560" y1="420" x2="1640" y2="420" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <line x1="1560" y1="460" x2="1630" y2="460" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <circle cx="200" cy="150" r="30" fill="rgba(232,80,27,0.06)"/>
+  <circle cx="1750" cy="900" r="40" fill="rgba(232,80,27,0.06)"/>
 </svg>

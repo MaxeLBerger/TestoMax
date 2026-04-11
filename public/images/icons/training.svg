@@ -1,7 +1,7 @@
-<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="30" cy="30" r="28" fill="#e8501b" opacity="0.1"/>
-  <path d="M15 28H20V32H15V28Z" fill="#e8501b"/>
-  <path d="M40 28H45V32H40V28Z" fill="#e8501b"/>
-  <rect x="20" y="26" width="20" height="8" rx="2" fill="#e8501b"/>
-  <circle cx="30" cy="30" r="3" fill="white"/>
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+  <rect x="12" y="26" width="36" height="5" rx="2.5" fill="#e8501b" opacity="0.7"/>
+  <circle cx="16" cy="28" r="7" fill="none" stroke="#e8501b" stroke-width="1.5" opacity="0.6"/>
+  <circle cx="44" cy="28" r="7" fill="none" stroke="#e8501b" stroke-width="1.5" opacity="0.6"/>
+  <path d="M26,22 L30,10 L34,22" stroke="#e8501b" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <polyline points="8,50 15,42 22,46 30,38 38,44 45,40 52,48" stroke="#e8501b" stroke-width="1.5" fill="none" opacity="0.4"/>
 </svg>

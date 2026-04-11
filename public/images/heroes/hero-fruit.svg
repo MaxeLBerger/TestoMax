@@ -1,14 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
   <defs>
-    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#512da8;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#673ab7;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#311b92;stop-opacity:1" />
+    <linearGradient id="fg10" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1b5e20"/>
+      <stop offset="50%" stop-color="#2e7d32"/>
+      <stop offset="100%" stop-color="#134517"/>
     </linearGradient>
   </defs>
-  <rect width="1920" height="1080" fill="url(#grad4)"/>
-  <circle cx="350" cy="250" r="100" fill="rgba(255,152,0,0.3)"/>
-  <circle cx="1550" cy="750" r="140" fill="rgba(255,152,0,0.25)"/>
-  <circle cx="950" cy="500" r="90" fill="rgba(255,152,0,0.35)"/>
-  <circle cx="700" cy="800" r="70" fill="rgba(255,152,0,0.28)"/>
+  <rect width="1920" height="1080" fill="url(#fg10)"/>
+  <circle cx="500" cy="500" r="120" fill="rgba(244,67,54,0.12)"/>
+  <path d="M500,380 Q510,350 500,380" stroke="rgba(76,175,80,0.2)" stroke-width="3" fill="none"/>
+  <ellipse cx="510" cy="370" rx="15" ry="25" fill="rgba(76,175,80,0.15)" transform="rotate(-15,510,370)"/>
+  <ellipse cx="490" cy="390" rx="4" ry="4" fill="rgba(255,255,255,0.08)"/>
+  <path d="M960,700 Q960,540 920,500 Q960,440 1000,500 Q960,540 960,700Z" fill="rgba(200,230,80,0.1)" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+  <ellipse cx="960" cy="600" rx="60" ry="90" fill="rgba(200,230,80,0.08)"/>
+  <circle cx="1450" cy="450" r="100" fill="rgba(255,152,0,0.1)" stroke="rgba(255,152,0,0.15)" stroke-width="2"/>
+  <circle cx="1450" cy="450" r="70" fill="rgba(255,152,0,0.06)"/>
+  <path d="M1440,350 Q1460,330 1470,350" stroke="rgba(76,175,80,0.2)" stroke-width="2" fill="none"/>
+  <ellipse cx="300" cy="850" rx="50" ry="8" fill="rgba(0,0,0,0.1)"/>
+  <circle cx="300" cy="800" r="50" fill="rgba(255,235,59,0.08)"/>
+  <path d="M1700,280 Q1710,260 1720,280" stroke="rgba(76,175,80,0.15)" stroke-width="2" fill="none"/>
+  <ellipse cx="1710" cy="270" rx="12" ry="20" fill="rgba(76,175,80,0.1)" transform="rotate(10,1710,270)"/>
+  <circle cx="150" cy="200" r="30" fill="rgba(76,175,80,0.06)"/>
+  <circle cx="1800" cy="900" r="35" fill="rgba(76,175,80,0.06)"/>
+  <circle cx="700" cy="150" r="25" fill="rgba(76,175,80,0.05)"/>
 </svg>

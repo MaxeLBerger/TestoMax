@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="avoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#111"/>
+    </linearGradient>
+    <radialGradient id="avoSkin" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#4caf50"/>
+      <stop offset="70%" stop-color="#2e7d32"/>
+      <stop offset="100%" stop-color="#1b5e20"/>
+    </radialGradient>
+    <radialGradient id="avoFlesh" cx="50%" cy="45%" r="45%">
+      <stop offset="0%" stop-color="#c5e1a5"/>
+      <stop offset="60%" stop-color="#aed581"/>
+      <stop offset="100%" stop-color="#8bc34a"/>
+    </radialGradient>
+    <radialGradient id="avoSeed" cx="45%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#a1887f"/>
+      <stop offset="50%" stop-color="#795548"/>
+      <stop offset="100%" stop-color="#4e342e"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#avoBg)"/>
+  <!-- Decorative -->
+  <circle cx="370" cy="270" r="50" fill="rgba(76,175,80,0.08)"/>
+  <circle cx="30" cy="30" r="35" fill="rgba(76,175,80,0.06)"/>
+  <!-- Whole avocado (left) -->
+  <path d="M120,70 Q90,120 95,180 Q100,240 140,260 Q180,240 185,180 Q190,120 160,70 Q140,45 120,70Z" fill="url(#avoSkin)"/>
+  <!-- Highlight on whole avocado -->
+  <path d="M125,85 Q110,130 115,175 Q118,195 130,200 Q148,195 150,175 Q155,130 145,85 Q135,65 125,85Z" fill="rgba(255,255,255,0.1)"/>
+  <!-- Stem -->
+  <ellipse cx="140" cy="62" rx="6" ry="8" fill="#5d4037"/>
+  <line x1="140" y1="54" x2="140" y2="42" stroke="#5d4037" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Leaf -->
+  <path d="M140,48 Q155,32 165,40 Q155,48 140,48Z" fill="#66bb6a"/>
+  <!-- Cut avocado half (right) -->
+  <path d="M240,70 Q210,120 215,180 Q220,240 260,260 Q300,240 305,180 Q310,120 280,70 Q260,45 240,70Z" fill="url(#avoSkin)"/>
+  <!-- Flesh -->
+  <path d="M245,80 Q220,125 225,180 Q228,232 260,248 Q292,232 295,180 Q300,125 275,80 Q260,58 245,80Z" fill="url(#avoFlesh)"/>
+  <!-- Pit -->
+  <ellipse cx="260" cy="170" rx="30" ry="35" fill="url(#avoSeed)"/>
+  <!-- Pit highlight -->
+  <ellipse cx="252" cy="160" rx="12" ry="15" fill="rgba(255,255,255,0.15)"/>
+  <!-- Flesh texture lines -->
+  <path d="M248,95 Q235,140 238,190" stroke="rgba(139,195,74,0.3)" stroke-width="0.8" fill="none"/>
+  <path d="M272,95 Q285,140 282,190" stroke="rgba(139,195,74,0.3)" stroke-width="0.8" fill="none"/>
+</svg>
