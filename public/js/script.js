@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
       console.log('Product clicked:', productName);
       
       // In production, this would track the click and redirect to affiliate link
-      alert(`Produkt "${productName}" wird in Kürze verfügbar sein!`);
+      alert(`Hinweis: Dies ist eine Demoseite. Das Produkt "${productName}" kann aktuell nicht erworben werden.`);
     });
   });
 });
